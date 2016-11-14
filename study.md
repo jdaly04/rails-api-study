@@ -40,7 +40,7 @@ In your own words, define what the responsibilities of the controller layer are
 in Rails.
 
 ```md
-The controller layer collects information / receives requests from client side.
+The controller layer collects information / receives requests from client side via the server. The controller serves as the architect behind the scenes but does not do the bulk of the work in fulfilling client-side requests.
 ```
 
 ## Define Router Responsiblities
@@ -57,5 +57,5 @@ Starting with a client making a GET request to a particular URL, describe how
 the parts of Rails interact to produce and send a response.
 
 ```md
-Controller layer receives the request via the router deciding which path to take and which controller to go to. Controller parses the information and then it goes to the model layer, which are Ruby classes, where the data is validated and logic is performed. Then back to the controller, to the view layer, which makes the data human-ready / readable on the screen, goes back to through the controller to the server which combines the prepared data from the view layer with the raw data and makes the proper http respnse to the user. 
+Controller layer receives the request via the router deciding which path to take and which controller to go to. Controller parses the information and then it goes to the model layer, which are Ruby classes, where the data is validated and logic is performed. Then back to the controller, to the view layer, which makes the data human-ready / readable on the screen, goes back to through the controller to the server which combines the prepared data from the view layer with the raw data and makes the proper http respnse to the user.
 ```
